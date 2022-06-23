@@ -21,7 +21,7 @@ class RootStore {
 }
 
 // 实例化根
-// 导出useStore context
+// 导出useStore context：这个useStore其实就是rootStore实例对象
 const rootStore = new RootStore()
 const context = React.createContext(rootStore)
 

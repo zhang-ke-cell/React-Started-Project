@@ -32,7 +32,7 @@ function App () {
           <Routes>
             {/* 创建路由path和组件对应关系 */}
             {/* Layout需要鉴权处理的 */}
-            {/* 这里的Layout不一定不能写死 要根据是否登录进行判断 */}
+            {/* 这里的Layout一定不能写死 要根据是否登录进行判断 */}
             <Route path='/' element={
               <AuthComponent>
                 <Layout />

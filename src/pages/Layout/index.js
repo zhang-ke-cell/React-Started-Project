@@ -17,6 +17,7 @@ const GeekLayout = () => {
   const { pathname } = useLocation()
   const { userStore, loginStore, channelStore } = useStore()
 
+
   useEffect(() => {
     userStore.getUserInfo()
     channelStore.loadChannelList()
@@ -71,7 +72,7 @@ const GeekLayout = () => {
           </Menu>
         </Sider>
         <Layout className="layout-content" style={{ padding: 20 }}>
-          {/* 二级路由出口 */}
+          {/* 二级路由出口,也就是Content展示区 */}
           <Outlet />
         </Layout>
       </Layout>
